@@ -1,0 +1,167 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        header.header.header__kvokka.container
+            .overlay
+            video(loop="" muted="" autoplay="" poster="img/kvokka.png").fullscreen-bg__video
+                source(src="img/media/kvokka.mp4" type="video/mp4")
+                source(src="img/media/kvokka.webm" type="video/webm")
+            .header__wrapper
+                a.header__logo(href="") kvokka 
+                .header__menu 
+                    a.header__menu-item(href="about.html") о нас
+                    a.header__menu-item(href="services.html") услуги
+                    a.header__menu-item(href="portfolio.html") портфолио
+                    a.header__menu-item(href="contacts.html") контакты
+                a(href="order.html").header__button
+                .header__language 
+                    button.active eng
+                    button ru 
+                .header__burger 
+                    img(src="img/burger.svg" alt="")
+            h1.header__title.header__title--mode
+                span kvokka
+                i digital-agency
+
+        section.about.container
+            h2.about__title.title Наше <span>агенство</span>
+            .about__col
+                p Профессионально занимаемся созданием продающих сайтов и их продвижением, обеспечиваем бизнес потоком новых клиентов реализуем масштабные проекты каждый раз достигая новых высот. 
+                a.about__link.link(href="#")
+                    span А что ещё? 
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.36842 2H28M28 2V26.2895M28 2L2 28" stroke="#2F2F2F" stroke-width="3" stroke-linejoin="round"/></svg>
+
+        section.portfolio.container 
+            h2.portfolio__title.title Мы <span>сотворили</span>
+            .portfolio__wrapper 
+                .portfolio__item.portfolio__item--1
+                    img(src="img/gallery/1.png" alt="")
+                    p.portfolio__caption Грузовой сервис «У француза»
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #КОРПОРАТИВНЫЙ САЙТ
+                .portfolio__item.portfolio__item--2
+                    img(src="img/gallery/4.png" alt="")
+                    p.portfolio__caption Центр поддержки экспорта
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #КОРПОРАТИВНЫЙ САЙТ
+                .portfolio__item.portfolio__item--3
+                    img(src="img/gallery/5.png" alt="")
+                    p.portfolio__caption «РЕМИТ» вкусные колбасы
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #ПРОДВИЖЕНИЕ САЙТА
+                .portfolio__item.portfolio__item--4
+                    img(src="img/gallery/2.png" alt="")
+                    p.portfolio__caption Donut Bar
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #ИНТЕРНЕТ-МАГАЗИН
+                .portfolio__item.portfolio__item--5
+                    img(src="img/gallery/3.png" alt="")
+                    p.portfolio__caption Фонд целевого капитала «Подари жизнь»
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #КОРПОРАТИВНЫЙ САЙТ
+                .portfolio__item.portfolio__item--6
+                    img(src="img/gallery/6.png" alt="")
+                    p.portfolio__caption REEF. Технологии очистки сточных вод
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #КОРПОРАТИВНЫЙ САЙТ
+            a.portfolio__link.link(href="#")
+                span Смотреть все
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.36842 2H28M28 2V26.2895M28 2L2 28" stroke="#2F2F2F" stroke-width="3" stroke-linejoin="round"/></svg>
+
+        section.services
+            .container
+                .services__wrapper
+                    h2.services__title.title.title--mode Мы <span>можем</span>
+                    ul.services__list 
+                        li.services__item.tooltip-item  
+                            p Web-разработка
+                            <svg width="97" height="69" viewBox="0 0 97 69" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="96" height="68" rx="34" stroke="white" stroke-opacity="0.5"/><path d="M35.5263 20H63M63 20V47.0921M63 20L34 49" stroke="white" stroke-opacity="0.5" stroke-width="3" stroke-linejoin="round"/></svg>
+                            i.tooltip Стоимость доставки устанавливается автоматичестки, выбрать способ доставки можно в разделе «Способы доставки»
+
+                        li.services__item.tooltip-item  
+                            p поддержка
+                            <svg width="97" height="69" viewBox="0 0 97 69" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="96" height="68" rx="34" stroke="white" stroke-opacity="0.5"/><path d="M35.5263 20H63M63 20V47.0921M63 20L34 49" stroke="white" stroke-opacity="0.5" stroke-width="3" stroke-linejoin="round"/></svg>
+                            i.tooltip Стоимость доставки устанавливается автоматичестки, выбрать способ доставки можно в разделе «Способы доставки»
+
+                        li.services__item.tooltip-item  
+                            p Дизайн
+                            <svg width="97" height="69" viewBox="0 0 97 69" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="96" height="68" rx="34" stroke="white" stroke-opacity="0.5"/><path d="M35.5263 20H63M63 20V47.0921M63 20L34 49" stroke="white" stroke-opacity="0.5" stroke-width="3" stroke-linejoin="round"/></svg>
+                            i.tooltip Стоимость доставки устанавливается автоматичестки, выбрать способ доставки можно в разделе «Способы доставки»
+
+                        li.services__item.tooltip-item  
+                            p Продвижение
+                            <svg width="97" height="69" viewBox="0 0 97 69" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="96" height="68" rx="34" stroke="white" stroke-opacity="0.5"/><path d="M35.5263 20H63M63 20V47.0921M63 20L34 49" stroke="white" stroke-opacity="0.5" stroke-width="3" stroke-linejoin="round"/></svg>
+                            i.tooltip Стоимость доставки устанавливается автоматичестки, выбрать способ доставки можно в разделе «Способы доставки»
+
+                        li.services__item.tooltip-item  
+                            p Аутстафф и retainer
+                            <svg width="97" height="69" viewBox="0 0 97 69" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="96" height="68" rx="34" stroke="white" stroke-opacity="0.5"/><path d="M35.5263 20H63M63 20V47.0921M63 20L34 49" stroke="white" stroke-opacity="0.5" stroke-width="3" stroke-linejoin="round"/></svg>
+                            i.tooltip Стоимость доставки устанавливается автоматичестки, выбрать способ доставки можно в разделе «Способы доставки»
+
+                        li.services__item.tooltip-item  
+                            p ДОРАБОТКА
+                            <svg width="97" height="69" viewBox="0 0 97 69" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="96" height="68" rx="34" stroke="white" stroke-opacity="0.5"/><path d="M35.5263 20H63M63 20V47.0921M63 20L34 49" stroke="white" stroke-opacity="0.5" stroke-width="3" stroke-linejoin="round"/></svg>
+                            i.tooltip Стоимость доставки устанавливается автоматичестки, выбрать способ доставки можно в разделе «Способы доставки»
+
+        section.calculate
+            .container 
+                h2.calculate__title.title Насчитали
+                ul.calculate__list 
+                    li.calculate__item 
+                        span >170
+                        p положительных<br> отзывов
+                    li.calculate__item 
+                        span 30%
+                        p eCommerce<br> проектов
+                    li.calculate__item 
+                        span >230
+                        p проделанных<br> работ
+                    li.calculate__item 
+                        span 5
+                        p лет бесценного<br> опыта
+            .calculate__rectangle.container
+                img(src="img/gallery/rectangle.png" alt="")
+
+        section.clients
+            .container 
+                h2.clients__title.title Наши <span>клиенты</span>
+            .clients__slider.slider-clients
+                div
+                    .slider-clients__item.slider-clients__item--1
+                        img(src="img/clients/item1.png" alt="")
+                div
+                    .slider-clients__item.slider-clients__item--2
+                        img(src="img/clients/item2.png" alt="")
+                div
+                    .slider-clients__item.slider-clients__item--3
+                        img(src="img/clients/item3.png" alt="")
+                div
+                    .slider-clients__item.slider-clients__item--4
+                        img(src="img/clients/item4.png" alt="")
+                div
+                    .slider-clients__item.slider-clients__item--5
+                        img(src="img/clients/item5.png" alt="")
+                div
+                    .slider-clients__item.slider-clients__item--1
+                        img(src="img/clients/item1.png" alt="")
+                div
+                    .slider-clients__item.slider-clients__item--2
+                        img(src="img/clients/item2.png" alt="")
+
+        section.feedback.container 
+            h2.feedback__title.title Поработаем?
+            form.feedback__form(action="get")
+                p.feedback__input
+                    input(type="text" placeholder="Как к вам обращаться")
+                p.feedback__input
+                    input(type="email" placeholder="E-mail") 
+                p.feedback__text Нажимая на кнопку «Отправить», вы даете согласие на обработку <a href="/">персональных данных</a> и соглашаетесь с <a href="/">политикой конфиденциальности</a>
+                button(type="submit").feedback__link.link
+                    span Отправить
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.36842 2H28M28 2V26.2895M28 2L2 28" stroke="#2F2F2F" stroke-width="3" stroke-linejoin="round"/></svg>
+
+
+
+        include modules/footer
+        include modules/script

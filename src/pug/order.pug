@@ -1,0 +1,39 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        header.header.header--mode.container
+            .header__wrapper
+                a.header__logo(href="index.html") kvokka 
+                .header__menu 
+                    a.header__menu-item(href="about.html") о нас
+                    a.header__menu-item(href="services.html") услуги
+                    a.header__menu-item(href="portfolio.html") портфолио
+                    a.header__menu-item(href="contacts.html") контакты
+                a(href="order.html").header__button.header__button--mode
+                .header__language.header__language--mode
+                    button.active eng
+                    button ru 
+                .header__burger.header__burger--dark
+        main 
+            section.feedback.container 
+                h2.feedback__title.title Оставить <span>заявку</span>
+                .feedback__col
+                    p.feedback__caption Поделитесь мнением о нашей работе или задайте любой интересующий вас вопрос в поле комментарий.
+                    form.feedback__form(action="get")
+                        p.feedback__input
+                            input(type="text" placeholder="Как к вам обращаться")
+                        p.feedback__input
+                            input(type="email" placeholder="E-mail") 
+                        p.feedback__input
+                            textarea(placeholder="Комментарий")
+                        p.feedback__text Нажимая на кнопку «Отправить», вы даете согласие на обработку <a href="/">персональных данных</a> и соглашаетесь с <a href="/">политикой конфиденциальности</a>
+                        button(type="submit").feedback__link.link
+                            span Отправить
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.36842 2H28M28 2V26.2895M28 2L2 28" stroke="#2F2F2F" stroke-width="3" stroke-linejoin="round"/></svg>
+
+
+
+
+        include modules/footer
+        include modules/script

@@ -1,0 +1,111 @@
+.footer {
+  margin-top: 275px;
+  background-color: #2f2f2f;
+  color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  a[href] {
+    &:hover {
+      color: #ff9f00;
+    }
+  }
+  @media (max-width: 1919px) {
+    margin-top: 250px;
+    padding-top: 64px;
+    padding-bottom: 26px;
+  }
+  @media (max-width: 1365px) {
+    margin-top: 208px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  @media (max-width: 1023px) {
+    margin-top: 167px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 175px;
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+}
+
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 63px;
+  font-size: 24px;
+
+  li {
+    width: 50%;
+    margin-bottom: 15px;
+    &:nth-child(2n) {
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: 767px) {
+        justify-content: flex-start;
+      }
+    }
+    @media (max-width: 1365px) {
+      margin-bottom: 10px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 8px;
+      width: 100%;
+      &:first-child {
+        order: 0;
+      }
+      &:nth-child(3) {
+        order: 1;
+      }
+      &:nth-child(5) {
+        order: 2;
+        margin-bottom: 32px;
+      }
+      &:nth-child(2) {
+        order: 3;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
+      &:last-child {
+        order: 5;
+      }
+    }
+  }
+  @media (max-width: 1919px) {
+    margin-bottom: 40px;
+    font-size: 22px;
+  }
+  @media (max-width: 1365px) {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  @media (max-width: 1023px) {
+    font-size: 18px;
+  }
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  font: 18px;
+  @media (max-width: 1919px) {
+    font-size: 16px;
+  }
+  @media (max-width: 1365px) {
+    font-size: 14px;
+  }
+  @media (max-width: 1023px) {
+    font-size: 12px;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    p {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

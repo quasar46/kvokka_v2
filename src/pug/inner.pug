@@ -1,0 +1,59 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        header.header.header--mode.container
+            .header__wrapper
+                a.header__logo(href="index.html") kvokka 
+                .header__menu 
+                    a.header__menu-item(href="about.html") о нас
+                    a.header__menu-item(href="services.html") услуги
+                    a.header__menu-item(href="portfolio.html") портфолио
+                    a.header__menu-item(href="contacts.html") контакты
+                a(href="order.html").header__button.header__button--mode
+                .header__language.header__language--mode
+                    button.active eng
+                    button ru 
+                .header__burger 
+
+        section.inner-caption.container 
+            h1.inner-caption__title
+                span REEF <br>
+                i очистка сточных вод
+
+            ul.inner-caption__description 
+                li 
+                    p Услуга:
+                    p
+                        a.inner-caption__teg(href="#") #Корпоративный сайт
+                li 
+                    p Год создания:
+                    p 2021
+                li 
+                    p Сайт:
+                    p.inner-caption__description-name sait_new.ru
+                li 
+                    p Стек:
+                    p Affinity Designer, HTML5, PHP, Bitrix
+            .inner-caption__banner 
+                img(src="img/portfolio/reed-banner.jpg" alt="")
+
+        section.inner-about.container 
+            .inner-about__wrapper
+                h2.inner-about__title.title О <span>проекте</span>
+                .inner-about__description 
+                    p Профессионально занимаемся созданием продающих сайтов и их продвижением, обеспечиваем бизнес потоком новых клиентов реализуем масштабные проекты каждый раз достигая новых высот. 
+            .inner-about__picture 
+                img(src="img/portfolio/reef.jpg" alt="")
+
+            a(href="#").inner-about__link
+                span Посетить <i>сайт</i> 
+                <svg width="95" height="70" viewBox="0 0 95 70" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="93.5" height="69" rx="34.5" stroke="#2F2F2F"/><path d="M36.3355 22.75H60.375M60.375 22.75V46.4556M60.375 22.75L35 48.125" stroke="#2F2F2F" stroke-width="3" stroke-linejoin="round"/></svg>
+
+
+
+
+
+
+        include modules/footer
+        include modules/script

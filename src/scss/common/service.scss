@@ -1,0 +1,24 @@
+.service__col {
+  margin-left: auto;
+  font-size: 28px;
+  margin-bottom: 150px;
+  max-width: 846px;
+  width: 100%;
+  flex: 1 0 auto;
+  line-height: 150%;
+  @media (max-width: 1919px) {
+    max-width: 607px;
+    margin-bottom: 70px;
+    font-size: 26px;
+  }
+  @media (max-width: 1365px) {
+    max-width: 472px;
+    margin-bottom: 60px;
+    font-size: 22px;
+  }
+  @media (max-width: 1023px) {
+    max-width: 100%;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+}

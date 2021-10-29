@@ -1,0 +1,86 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+
+        section.preheader.container
+            h1.header__title 
+                span WEB 
+                i разработка
+
+        section.service.container
+            .service__col
+                p Веб-разработка — процесс создания сайта или приложения. Основными этапами процесса являются веб-дизайн, вёрстка страниц, программирование на стороне клиента и сервера, а также конфигурирование веб-сервера. Живой текстик про разработку будет тут, а пока определение из Википедии.
+
+            h2.service__title.title Вы <span>получите</span>
+            ul.calculate__list.calculate__list--mode 
+                li.calculate__item.calculate__item--mode
+                    span 1
+                    p Чистый программный код.
+                li.calculate__item.calculate__item--mode
+                    span 2
+                    p Точное соблюдение сроков.
+                li.calculate__item.calculate__item--mode
+                    span 3
+                    p Фиксирование каждого этапа работ.
+                li.calculate__item.calculate__item--mode
+                    span 4
+                    p Удобный и стильный дизайн.
+
+        section.portfolio.container 
+            h2.portfolio__title.title Мы <span>делаем</span>
+            .portfolio__wrapper 
+                .portfolio__item.portfolio__item--1
+                    img(src="img/gallery/1.png" alt="")
+                    p.portfolio__caption Грузовой сервис «У француза»
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #КОРПОРАТИВНЫЙ САЙТ
+                .portfolio__item.portfolio__item--2
+                    img(src="img/gallery/4.png" alt="")
+                    p.portfolio__caption Центр поддержки экспорта
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #КОРПОРАТИВНЫЙ САЙТ
+                .portfolio__item.portfolio__item--3
+                    img(src="img/gallery/5.png" alt="")
+                    p.portfolio__caption «РЕМИТ» вкусные колбасы
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #ПРОДВИЖЕНИЕ САЙТА
+            a.portfolio__link.link(href="portfolio.html")
+                span В портфолио
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.36842 2H28M28 2V26.2895M28 2L2 28" stroke="#2F2F2F" stroke-width="3" stroke-linejoin="round"/></svg>
+
+        section.wide-block
+            .container 
+                p стоимость разработки <i>ОТ 100 000 ₽</i> 
+
+        section.stages.container 
+            h2.stages__title.title Как <span>делаем</span>
+            ul.stages__list
+                li.stages__item 
+                    span.stages__number 1
+                    p.stages__caption Техническое задание
+                    p.stages__description Разработка технического задания в виде документа, который включает в себя все требования к разработке.
+                li.stages__item
+                    span.stages__number 2
+                    p.stages__caption Дизайн
+                    p.stages__description разработка дизайн-концепции сайта, отрисовка главной и внутренних страниц, адаптивных версий.
+                li.stages__item
+                    span.stages__number 3
+                    p.stages__caption Frontend разработка
+                    p.stages__description Адаптивная верстка дизайн-макетов и анимаций с использованием библиотек.
+                li.stages__item
+                    span.stages__number 4
+                    p.stages__caption Backend разработка
+                    p.stages__description проведение имплементации и интеграций, Создание панели администратора, Разграничение ролей и доступов.
+                li.stages__item
+                    span.stages__number 5
+                    p.stages__caption наполнение контентом
+                    p.stages__description загрузка текстовой, графической и медиа-информации на готовый сайт, заключительная проверка корректности работы.
+
+
+
+
+
+        include modules/footer
+        include modules/script

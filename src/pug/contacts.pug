@@ -1,0 +1,46 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+
+        section.preheader.container
+            h1.header__title 
+                span как 
+                i нас найти
+
+        section.contacts.container 
+            .contacts__map#map
+            ul.contacts__list
+                li 
+                    p Адрес:
+                li 
+                    a ул. Максима Горького, 70
+                li 
+                    p Телефон:
+                li 
+                    a(href="tel:+74712747565") +7 (4712) 747-565
+                li 
+                    p E-mail:
+                li 
+                    a(href="mailto:sale@kvokka.com") sale@kvokka.com
+
+        section.feedback.container 
+            h2.feedback__title.title Поработаем?
+            form.feedback__form(action="get")
+                p.feedback__input
+                    input(type="text" placeholder="Как к вам обращаться")
+                p.feedback__input
+                    input(type="email" placeholder="E-mail") 
+                p.feedback__text Нажимая на кнопку «Отправить», вы даете согласие на обработку <a href="/">персональных данных</a> и соглашаетесь с <a href="/">политикой конфиденциальности</a>
+                button(type="submit").feedback__link.link
+                    span Отправить
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.36842 2H28M28 2V26.2895M28 2L2 28" stroke="#2F2F2F" stroke-width="3" stroke-linejoin="round"/></svg>
+
+
+
+
+        include modules/footer
+        include modules/script
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="js/ymaps.js")

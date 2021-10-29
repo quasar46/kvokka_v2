@@ -1,0 +1,122 @@
+.calculate {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 220px;
+  @media (max-width: 1919px) {
+    margin-bottom: 180px;
+  }
+  @media (max-width: 1365px) {
+    margin-bottom: 150px;
+  }
+  @media (max-width: 1023px) {
+    margin-bottom: 120px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 88px;
+  }
+}
+
+.calculate__link {
+  align-self: center;
+}
+
+.calculate__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 220px;
+  @media (max-width: 1919px) {
+    margin-bottom: 180px;
+  }
+  @media (max-width: 1365px) {
+    margin-bottom: 150px;
+  }
+  @media (max-width: 1023px) {
+    margin-bottom: 120px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 88px;
+  }
+  &--mode {
+    justify-content: space-between;
+  }
+}
+
+.calculate__item {
+  width: calc(100% / 4);
+  span {
+    font-size: 100px;
+    font-weight: 500;
+    bottom: 3px;
+    @media (max-width: 1919px) {
+      font-size: 80px;
+    }
+    @media (max-width: 1365px) {
+      font-size: 60px;
+    }
+    @media (max-width: 1023px) {
+      font-size: 50px;
+    }
+  }
+  p {
+    font-size: 28px;
+    line-height: 150%;
+    @media (max-width: 1919px) {
+      font-size: 26px;
+    }
+    @media (max-width: 1365px) {
+      font-size: 22px;
+    }
+    @media (max-width: 1023px) {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    width: 50%;
+    margin-bottom: 24px;
+  }
+  &--mode {
+    width: calc(100% / 4 - 100px);
+    @media (max-width: 1023px) {
+      width: calc(100% / 4 - 10px);
+    }
+    @media (max-width: 767px) {
+      width: 50%;
+    }
+  }
+}
+
+.calculate__rectangle {
+  overflow: hidden;
+  height: 880px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  @media (max-width: 1919px) {
+    height: 639px;
+  }
+  @media (max-width: 1365px) {
+    height: 477px;
+  }
+  @media (max-width: 1023px) {
+    height: 357px;
+  }
+  @media (max-width: 767px) {
+    height: 444px;
+    padding: 0;
+  }
+  &--mode {
+    margin-bottom: 60px;
+    @media (max-width: 1919px) {
+      margin-bottom: 50px;
+    }
+    @media (max-width: 1365px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 1023px) {
+      margin-bottom: 30px;
+    }
+  }
+}

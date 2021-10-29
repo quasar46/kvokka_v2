@@ -1,0 +1,123 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        header.header.header__about.container
+            .header__wrapper
+                a.header__logo(href="index.html") kvokka 
+                .header__menu 
+                    a.header__menu-item(href="about.html") о нас
+                    a.header__menu-item(href="services.html") услуги
+                    a.header__menu-item(href="portfolio.html") портфолио
+                    a.header__menu-item(href="contacts.html") контакты
+                a(href="order.html").header__button
+                .header__language 
+                    button.active eng
+                    button ru 
+                .header__burger 
+                    img(src="img/burger.svg" alt="меню")
+            h1.header__title
+                span наше 
+                i агентство
+
+        section.about.about--inner.container
+            .about__col
+                p Профессионально занимаемся созданием продающих сайтов и их продвижением, обеспечиваем бизнес потоком новых клиентов реализуем масштабные проекты каждый раз достигая новых высот. 
+
+        section.calculate
+            .container 
+                ul.calculate__list 
+                    li.calculate__item 
+                        span >170
+                        p положительных<br> отзывов
+                    li.calculate__item 
+                        span 30%
+                        p eCommerce<br> проектов
+                    li.calculate__item 
+                        span >230
+                        p проделанных<br> работ
+                    li.calculate__item 
+                        span 5
+                        p лет бесценного<br> опыта
+            .calculate__rectangle.calculate__rectangle--mode.container
+                img(src="img/gallery/rectangle.png" alt="")
+            a(href="portfolio.html").calculate__link.link
+                span В портфолио
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.36842 2H28M28 2V26.2895M28 2L2 28" stroke="#2F2F2F" stroke-width="3" stroke-linejoin="round"/></svg>
+
+        section.awards.container 
+            .awards__top
+                h2.awards__title.title Заслужено
+                .awards__content
+                    p Каждый день мы анализируем свои плюсы иминусы, подводим итоги действий и приближаемся к идеалу.
+            .awards__wrapper 
+                .awards__item.awards__item--big
+                    img(src="" alt="")
+                    p.awards__caption Название награды 1
+                .awards__col
+                    .awards__item.awards__item--little
+                        img(src="" alt="")
+                        p.awards__caption Название награды 2
+                    .awards__item.awards__item--little
+                        img(src="" alt="")
+                        p.awards__caption Название награды 3
+
+        section.partners.container 
+            h2.partners__title.title Партнеры
+            .partners__content
+                p Мы ведем легальную деятельность тесно сотрудничаем и имеем партнерские сертификаты 1С-BITRIX и reg.ru
+                ul.partners__list 
+                    li.partners__item.partners__item--bitrix
+                        img(src="img/clients/partner1.svg" alt="")
+                    li.partners__item.partners__item--reg
+                        img(src="img/clients/partner2.svg" alt="")
+
+        section.portfolio-inner 
+            .container
+                h2.title.portfolio-inner__title Сотворили
+                .portfolio-inner__wrapper 
+                    .portfolio-inner__item 
+                        p.portfolio-inner__caption До:
+                        img(src="img/gallery/7.png" alt="")
+                        p.portfolio-inner__name REEF. Технологии очистки сточных вод.
+                    .portfolio-inner__item 
+                        p.portfolio-inner__caption После:
+                        img(src="img/gallery/8.png" alt="")
+                    .portfolio-inner__item 
+                        p.portfolio-inner__caption До:
+                        img(src="img/gallery/9.png" alt="")
+                        p.portfolio-inner__name REEF. Грузовой сервис «У француза»
+                    .portfolio-inner__item 
+                        p.portfolio-inner__caption После:
+                        img(src="img/gallery/rectangle.png" alt="")
+
+        section.clients
+            .container 
+                h2.clients__title.title Наши <span>клиенты</span>
+            .clients__slider.slider-clients
+                div
+                    .slider-clients__item.slider-clients__item--1
+                        img(src="img/clients/item1.png" alt="")
+                div
+                    .slider-clients__item.slider-clients__item--2
+                        img(src="img/clients/item2.png" alt="")
+                div
+                    .slider-clients__item.slider-clients__item--3
+                        img(src="img/clients/item3.png" alt="")
+                div
+                    .slider-clients__item.slider-clients__item--4
+                        img(src="img/clients/item4.png" alt="")
+                div
+                    .slider-clients__item.slider-clients__item--5
+                        img(src="img/clients/item5.png" alt="")
+                div
+                    .slider-clients__item.slider-clients__item--1
+                        img(src="img/clients/item1.png" alt="")
+                div
+                    .slider-clients__item.slider-clients__item--2
+                        img(src="img/clients/item2.png" alt="")
+
+
+
+        include modules/footer
+        include modules/script

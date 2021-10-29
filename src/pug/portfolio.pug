@@ -1,0 +1,54 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+
+        section.preheader.container
+            h1.header__title 
+                span наше 
+                i портфолио
+
+        section.portfolio.container 
+            .portfolio__tegs 
+                a.portfolio__teg(href="#") #КОРПОРАТИВНЫЙ САЙТ
+                a.portfolio__teg(href="#") #САЙТ-ВИЗИТКА
+                a.portfolio__teg(href="#") #ИНТЕРНЕТ-МАГАЗИН
+                a.portfolio__teg(href="#") #LEANDIND PAGE
+                a.portfolio__teg(href="#") #ПРОДВИЖЕНИЕ САЙТА
+                a.portfolio__teg(href="#") #ECOMMERCE
+            .portfolio__wrapper 
+                .portfolio__item.portfolio__item--1
+                    img(src="img/gallery/1.png" alt="")
+                    p.portfolio__caption Грузовой сервис «У француза»
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #КОРПОРАТИВНЫЙ САЙТ
+                .portfolio__item.portfolio__item--2
+                    img(src="img/gallery/4.png" alt="")
+                    p.portfolio__caption Центр поддержки экспорта
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #КОРПОРАТИВНЫЙ САЙТ
+                .portfolio__item.portfolio__item--3
+                    img(src="img/gallery/5.png" alt="")
+                    p.portfolio__caption «РЕМИТ» вкусные колбасы
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #ПРОДВИЖЕНИЕ САЙТА
+                .portfolio__item.portfolio__item--4
+                    img(src="img/gallery/2.png" alt="")
+                    p.portfolio__caption Donut Bar
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #ИНТЕРНЕТ-МАГАЗИН
+                .portfolio__item.portfolio__item--5
+                    img(src="img/gallery/3.png" alt="")
+                    p.portfolio__caption Фонд целевого капитала «Подари жизнь»
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #КОРПОРАТИВНЫЙ САЙТ
+                .portfolio__item.portfolio__item--6
+                    img(src="img/gallery/6.png" alt="")
+                    p.portfolio__caption REEF. Технологии очистки сточных вод
+                    .portfolio__tegs 
+                        a.portfolio__teg(href="#") #КОРПОРАТИВНЫЙ САЙТ
+
+
+        include modules/footer
+        include modules/script
